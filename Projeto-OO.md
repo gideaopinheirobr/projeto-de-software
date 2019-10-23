@@ -19,13 +19,13 @@
   <dt> 3 - Cadastro de Evento: </dt>
   <dd> 
     O usuário poderá cadastrar um evento no sistema.
-    Informando o Nome do evento, local, se é pago ou gratuito, a equipe que irá trabalhar, fornecedores, patrocinadores e atraçes.
+    Informando o Nome do evento, local, se é pago ou gratuito, a equipe que irá trabalhar, fornecedores, patrocinadores e atrações.
   </dd>
   
   <dt> 4 - Cadastrar Equipes: </dt>
   <dd> 
     O usuário poderá cadastrar uma ou várias equipes e especificar seu nível de acesso no sistema (visualização/edição)
-    Essas equipes podero ser alocadas para diferentes eventos.
+    Essas equipes poderão ser alocadas para diferentes eventos.
   </dd>
   
   <dt> 5 - Cadastrar Patrocinadores: </dt>
