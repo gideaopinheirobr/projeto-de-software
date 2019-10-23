@@ -1,4 +1,5 @@
-### Projeto Orientação a Objetos - Projeto de Software
+### Projeto de Orientação a Objetos
+### Disciplina: Projeto de Software
 
 # EventPlan
 
