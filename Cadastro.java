@@ -1,24 +1,34 @@
 import java.util.Scanner;
-import java.util.Date;
 
 public class Cadastro {
    static Scanner input = new Scanner(System.in);
 
    public static void main(String[] args) {
 
+       System.out.printf("Seu cpf: ");
        String cpf = input.nextLine();
+
+       System.out.printf("Seu nome: ");
        String name = input.nextLine();
+
+       System.out.printf("Seu email: ");
        String email = input.nextLine();
+
+       System.out.printf("Seu endereço: ");
        String adress = input.nextLine();
+
+       System.out.printf("Seu número de celular: ");
        String mPhone = input.nextLine();
 
-       Person pessoa = new Person(cpf, name, email, adress, mPhone);
-       String result = pessoa.getName();
-       System.out.println("Your name is "+result);
-       pessoa.handleName("Pinheiro");
-       String oResult = pessoa.getName();
-       System.out.println("Your name is "+oResult);
-       
+       Person primeiraPessoa = new Person(cpf, name, email, adress, mPhone);
+       Event firstEvent = new Event("titulo", "endereço", primeiraPessoa, true);
+
+       System.out.println("Nome do evento: "+firstEvent.getTitle());
+       System.out.println("Endereço do evento: "+firstEvent.getAdress());
+       System.out.println("Gerente do evento: "+firstEvent.getManager().getName());
+       System.out.println("Este evento "+ (firstEvent.getTicket() ? "é" : "não é") +" pago!");
+       firstEvent.handleTicket();
+       System.out.println("Este evento "+ (firstEvent.getTicket() ? "é" : "não é") +" pago!");
    }
 
 }

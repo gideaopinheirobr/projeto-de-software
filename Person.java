@@ -10,7 +10,8 @@ public class Person {
     public Person (String cpf, String name, 
                     String email, String adress, 
                     String mPhone) {
-        this.cpf = cpf;
+
+        if( cpfIsValid(cpf) ) { this.cpf = cpf; }           
         this.name = name;
         this.email = email;
         this.adress = adress;
@@ -20,16 +21,7 @@ public class Person {
     public String getName() { return this.name; }
     public void handleName(String name) { this.name = name; }
 
+    private Boolean cpfIsValid(String cpf) { return cpf.length() == 11; }
 
 
 }
-
-
-/**
-3895
-
-674.3
-727.8
-950
- 
- */
